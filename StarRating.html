@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha2e6-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .checked {
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Edit the text inside the h2 element or comment it out. -->
+        <h2>Star Rating</h2>
+
+        <span id="a" class="fa fa-star"></span>
+        <span id="b" class="fa fa-star"></span>
+        <span id="c" class="fa fa-star"></span>
+        <span id="d" class="fa fa-star"></span>
+        <span id="e" class="fa fa-star"></span>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#a').click(function() {
+                $('#a').addClass('checked');
+                $('#b,#c,#d,#e').removeClass('checked');
+            });
+            $('#b').click(function() {
+                $('#a,#b').addClass('checked');
+                $('#c,#d,#e').removeClass('checked');
+            });
+            $('#c').click(function() {
+                $('#a,#b,#c').addClass('checked');
+                $('#d,#e').removeClass('checked');
+            });
+            $('#d').click(function() {
+                $('#a,#b,#c,#d').addClass('checked');
+                $('#e').removeClass('checked');
+            });
+            $('#e').click(function() {
+                $('#a,#b,#c,#d,#e').addClass('checked');
+            });
+        });
+    </script>
+</body>
+
+</html>
