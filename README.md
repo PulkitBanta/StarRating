@@ -1,6 +1,5 @@
 # StarRating
-Use This code for star rating in any website.
+This is the basic code for the Star Rating for any website.
 
 Open the file copy the code and you are ready to go with it.
-
-Thanks for visiting my profile.
+The code is in CSS and HTML only.
