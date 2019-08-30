@@ -5,22 +5,8 @@
     <meta charset="utf-8" />
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha2e6-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        /* Add this code to your existing CSS file */
-        
-        .checked {
-            color: orange;
-        }
-        /* If you do not want the element to be center align then remove the two CSS properties below and remove class align from div element */
-        
-        .align {
-            text-align: center;
-        }
-        
-        span {
-            display: inline-block;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
 </head>
 
 <body>
@@ -39,23 +25,6 @@
         </div>
     </div>
 
-    <script>
-        // Add this code to your existing JS file
-
-        // setting the stars color on clicking the stars
-        $("span").click(function() {
-            $(this).prevAll().css('color', 'orange'), $(this).css('color', 'orange');
-            $(this).nextAll().css('color', 'black');
-        });
-
-        // to color the stars on hovering over them
-        $('span').mouseover(function() {
-            $(this).prevAll().addClass('checked'), $(this).addClass('checked');
-            $(this).mouseleave(function() {
-                $('span').removeClass('checked');
-            });
-        });
-    </script>
 </body>
 
 </html>

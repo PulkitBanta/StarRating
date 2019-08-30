@@ -1,0 +1,16 @@
+/* Paste this code in your CSS file */
+
+.checked {
+    color: orange;
+}
+
+
+/* If you do not want the element to be center align then remove the two CSS properties below and remove class align from div element */
+
+.align {
+    text-align: center;
+}
+
+span {
+    display: inline-block;
+}
