@@ -21,4 +21,8 @@ $(document).ready(function() {
     slider.oninput = function() {
         output.innerHTML = this.value;
     }
+
+    $(".clear").click(function() {
+        $("span").css('color', 'black');
+    })
 })
