@@ -1,5 +1,7 @@
 // Add this code to your existing JS file
+
 $(document).ready(function() {
+
     // setting the stars color on clicking the stars
     $("span").click(function() {
         $(this).prevAll().css('color', 'orange'), $(this).css('color', 'orange');
@@ -14,15 +16,33 @@ $(document).ready(function() {
         });
     });
 
+    // Coloring the stars based on the slider
     var slider = document.getElementById("myRange");
-    var output = document.getElementById("demo");
-    output.innerHTML = slider.value;
 
     slider.oninput = function() {
-        output.innerHTML = this.value;
+
+        var i = this.value;
+        var j = 5;
+        var c = i;
+        console.log("i == " + i);
+        console.log("j == " + j);
+
+        var x = document.getElementsByTagName("span");
+
+        while (i--) {
+            x[i].style.color = 'orange';
+            console.log(x[i]);
+        }
+
+        while (j-- > c) {
+            x[j].style.color = 'black';
+        }
+
     }
 
+    // Clearing the color of the stars on clear button
     $(".clear").click(function() {
         $("span").css('color', 'black');
+        $(".slider").val(0);
     })
 })
