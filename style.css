@@ -1,6 +1,4 @@
-.checked {
-    color: orange;
-}
+/* Clear button CSS */
 
 .clear {
     padding: 0.5em 0.8em;
@@ -17,7 +15,7 @@
 }
 
 
-/* If you do not want the element to be center align then remove the two CSS properties below and remove align class from div element */
+/* Clear button CSS */
 
 .align {
     text-align: center;
@@ -28,10 +26,11 @@ span {
 }
 
 
-/* SlideBar css */
+/* SlideBar CSS */
 
 .slidecontainer {
     width: 20%;
+    min-width: 200px;
     margin: 2% auto;
 }
 
@@ -70,4 +69,18 @@ span {
 }
 
 
-/* SlideBar css */
+/* SlideBar CSS */
+
+
+/* Stars CSS */
+
+.checked {
+    color: orange;
+}
+
+.span:hover {
+    cursor: pointer;
+}
+
+
+/* Stars CSS */

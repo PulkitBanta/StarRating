@@ -2,13 +2,15 @@
 
 $(document).ready(function() {
 
-    // setting the stars color on clicking the stars
+    // Adding color on the stars with click event
+
     $("span").click(function() {
         $(this).prevAll().css('color', 'orange'), $(this).css('color', 'orange');
         $(this).nextAll().css('color', 'black');
     });
 
-    // to color the stars on hovering over them
+    // Adding color on the stars with hover event
+
     $('span').mouseover(function() {
         $(this).prevAll().addClass('checked'), $(this).addClass('checked');
         $(this).mouseleave(function() {
@@ -17,6 +19,7 @@ $(document).ready(function() {
     });
 
     // Coloring the stars based on the slider
+
     var slider = document.getElementById("myRange");
 
     slider.oninput = function() {
@@ -40,7 +43,8 @@ $(document).ready(function() {
 
     }
 
-    // Clearing the color of the stars on clear button
+    // Removing the color of the stars
+
     $(".clear").click(function() {
         $("span").css('color', 'black');
         $(".slider").val(0);
