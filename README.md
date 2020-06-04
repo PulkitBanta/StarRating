@@ -1,5 +1,9 @@
 # Star Rating
-Implement **Star Rating** on your website with ease. 
+Implement **Star Rating** on your website with ease.
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e651ce99-4238-4094-9a8b-cbc3255ff8f1/deploy-status)](https://app.netlify.com/sites/starating/deploys)
+
+View Live -- [Starating](starating.netlify.com)
 
 ## Getting Started
 
